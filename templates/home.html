@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagnóstico Médico</title>
+</head>
+<body>
+    <h1>Herramienta de Diagnóstico de enfermedades eritematoescamosas</h1>
+
+
+    <!-- Enlace al formulario de diagnóstico -->
+    <p><a href="{% url 'svm_predict' %}">Ir al formulario de diagnóstico</a></p>
+    
+    <!-- Descripción de la herramienta -->
+    <section>
+        <h2>Descripción de la Herramienta</h2>
+        <p>Esta herramienta está diseñada para facilitar el diagnóstico de enfermedades eritematoescamosas.
+            Mediante un formulario simple, podrás ingresar los síntomas y obtener una evaluación preliminar.
+
+            Los atributos se toman valores 0, 1, 2 y 3, 0 indica que la característica no estaba presente, 3 indica la mayor cantidad posible y 1, 2 indican los valores intermedios relativos, excepto en los antecedentes familiares que es nominal y la edad que es lineal.
+
+        </p>
+    </section>
+
+    
+</body>
+</html>
